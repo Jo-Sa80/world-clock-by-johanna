@@ -6,13 +6,56 @@
     <link rel="stylesheet" href="src/style.css" />
     <title>World Clock</title>
   </head>
+
   <body>
-    <footer>
-      Coded by <a href="https://github.com/Jo-Sa80">Johanna Sandvoß</a> sourced
-      on
-      <a href="https://github.com/Jo-Sa80/world-clock-by-johanna">GitHub</a
-      >hosted on <a href="https://johannas-world-clock.netlify.app/">netlify</a>
-    </footer>
-    <script src="src/script.js"></script>
+    <div class="container">
+      <header>
+        <h1>World Clock</h1>
+        <select name="city" id="chose-city">
+          <option value="">Select a city</option>
+          <option value="losAngeles">Los Angeles</option>
+          <option value="sydney">Sydney</option>
+          <option value="paris">Paris</option>
+          <option value="tokyo">Tokyo</option>
+        </select>
+      </header>
+      <main>
+        <div class="city-time">
+          <h2>Los Angeles</h2>
+          <p>August 9th 2024</p>
+          <div>2:18:23 AM</div>
+        </div>
+        <div class="city-time">
+          <h2>Sydney</h2>
+          <p>August 9th 2024</p>
+          <div>2:18:23 AM</div>
+        </div>
+        <div class="city-time">
+          <h2>Paris</h2>
+          <p>August 9th 2024</p>
+          <div>2:18:23 AM</div>
+        </div>
+        <div class="city-time">
+          <h2>Tokyo</h2>
+          <p>August 9th 2024</p>
+          <div>2:18:23 AM</div>
+        </div>
+      </main>
+      <footer>
+        Coded by
+        <a href="https://github.com/Jo-Sa80" target="_blank">Johanna Sandvoß</a>
+        sourced on
+        <a
+          href="https://github.com/Jo-Sa80/world-clock-by-johanna"
+          target="_blank"
+          >GitHub</a
+        >
+        hosted on
+        <a href="https://johannas-world-clock.netlify.app/" target="_blank"
+          >netlify</a
+        >
+      </footer>
+      <script src="src/script.js"></script>
+    </div>
   </body>
 </html>
