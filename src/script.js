@@ -27,6 +27,20 @@ function updateTime() {
 
     parisTimeElement.innerHTML = `${parisTime} <small>${parisAmPm}</small>`;
   }
+
+  let sydneyElement = document.querySelector("#sydney");
+  if (sydneyElement) {
+    let sydneyDateElement = sydneyElement.querySelector(".date");
+    let sydneyTimeElement = sydneyElement.querySelector(".time");
+    let sydneyAmPmElement = sydneyElement.querySelector("small");
+    let sydneyDate = moment().tz("Australia/Sydney").format(" MMMM D YYYY");
+    let sydneyTime = moment().tz("Australia/Sydney").format(" h:mm:ss");
+    let sydneyAmPm = moment().tz("Australia/Sydney").format(" A");
+
+    sydneyDateElement.innerHTML = sydneyDate;
+
+    sydneyTimeElement.innerHTML = `${sydneyTime} <small>${sydneyAmPm}</small>`;
+  }
 }
 
 updateTime();
