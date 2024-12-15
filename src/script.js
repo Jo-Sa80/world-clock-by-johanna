@@ -53,6 +53,7 @@ function showCityTime(event) {
         <small>${cityTime.format("A")}</small>
       </div>
     </div>
+    <a href="/"> back to all cities</a>
   `;
 }
 

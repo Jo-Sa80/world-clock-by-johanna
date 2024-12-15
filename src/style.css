@@ -31,6 +31,7 @@ h2 {
   display: flex;
   justify-content: space-between;
   border-bottom: 1px dashed rgb(195, 189, 189, 0.5);
+  margin-bottom: 10px;
 }
 .city-time:last-child {
   border: none;
